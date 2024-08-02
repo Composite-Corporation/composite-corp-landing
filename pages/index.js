@@ -1,24 +1,42 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import EmailForm from '../components/RequestDemoForm';
+import RequestDemoForm from '../components/RequestDemoForm';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Get Composite.ai</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className={styles.title}>
+        {/* <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        </h1> */}
+
+        <div>
+          <Image
+            src="/images/logo-full.png"
+            alt="Logo"
+            width={650}
+            height={200}
+          />
+        </div>
 
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+          Building AI for Sustainability Compliance and Governance. 
+        </p>
+        
+        <p className={styles.description} style={{color: '#8cbc28'}}>
+          Coming soon…
         </p>
 
-        <div className={styles.grid}>
+        <RequestDemoForm/>
+
+        {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -46,10 +64,10 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
 
-      <footer>
+      {/* <footer>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -58,7 +76,7 @@ export default function Home() {
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
         </a>
-      </footer>
+      </footer> */}
 
       <style jsx>{`
         main {
