@@ -57,7 +57,7 @@ const RequestDemoForm = () => {
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
         <h2>Request a Demo</h2>
-        <p>Fill in the form to connect with a member of our sales team</p>
+        <p>Fill out the form to connect with a member of our sales team.</p>
         <div className={styles.formGroup}>
             <input
                 type="text"
